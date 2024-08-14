@@ -105,14 +105,18 @@ docker build --build-arg TMDB_V3_API_KEY=<your-api-key> -t netflix .
         sudo apt-get update
         sudo apt-get install trivy        
         ```
-        
+
+
+        ```
+        trivy image <imageid>
+        ``` 
         to scan image using trivy
         ```
         trivy image <imageid>
         ```
         
         
-2. **Integrate SonarQube and Configure:**
+3. **Integrate SonarQube and Configure:**
     - Integrate SonarQube with your CI/CD pipeline.
     - Configure SonarQube to analyze code for quality and security issues.
 
@@ -142,6 +146,7 @@ docker build --build-arg TMDB_V3_API_KEY=<your-api-key> -t netflix .
     sudo systemctl enable jenkins
     ```
     
+    - sudo service jenkins status
     - Access Jenkins in a web browser using the public IP of your EC2 instance.
         
         publicIp:8080
