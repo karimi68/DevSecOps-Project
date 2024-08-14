@@ -106,9 +106,10 @@ docker build --build-arg TMDB_V3_API_KEY=<your-api-key> -t netflix .
         sudo apt-get install trivy        
         ```
 
+        to scan filesyste, using trivy within the project directory
 
         ```
-        trivy image <imageid>
+        trivy image .
         ``` 
         to scan image using trivy
         ```
